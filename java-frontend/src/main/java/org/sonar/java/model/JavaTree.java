@@ -328,6 +328,9 @@ public abstract class JavaTree implements Tree {
 
     @Nullable
     public Symbol symbol() {
+
+      int i;
+
       if (binding != null) {
         switch (binding.getKind()) {
           case IBinding.TYPE:
